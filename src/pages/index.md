@@ -1,21 +1,15 @@
 ---
 layout: ../layouts/Layout.astro
-title: Nice Tat Astro Template
+title: ary4n
 ---
 <!-- Markdown Preview - https://dillinger.io/ -->
 
-# Nice Tat Astro Template
+[youtube]([https://www.youtube.com/@ar4yn)
 
-[using this template](/how-to-use)
+[github](https://github.com/ar4yn)
 
-[youtube](https://www.youtube.com/watch?v=sEyHnHjhlr4)
+[instagram](https://www.instagram.com/ar4yn_/)
 
-[github](https://github.com/ThatGuySam/nice-tat)
-
-[instagram](https://www.instagram.com/caseyneistat/)
-
-[onlyfans](/onlyfans)
-
-[twitter](https://twitter.com/Casey)
+[twitter](https://twitter.com/x)
 
 [contact](/contact)
