@@ -5,6 +5,7 @@ title: ary4n
 <!-- Markdown Preview - https://dillinger.io/ -->
 @ary4n
 
+
 [youtube](https://www.youtube.com/@ar4yn)
 
 [github](https://github.com/ar4yn)
@@ -14,3 +15,5 @@ title: ary4n
 [twitter](https://twitter.com/x)
 
 [contact](/contact)
+
+https://ary4n.vercel.app/.well-known/discord
