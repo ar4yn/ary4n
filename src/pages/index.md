@@ -15,5 +15,3 @@ title: ary4n
 [twitter](https://twitter.com/x)
 
 [contact](/contact)
-
-https://ary4n.vercel.app/.well-known/discord
