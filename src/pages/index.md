@@ -11,6 +11,6 @@ title: ary4n
 
 [instagram](https://www.instagram.com/ar4yn_/)
 
-[twitter](https://twitter.com/x)
+[tiktok](https://www.tiktok.com/@24h0m)
 
 [contact](/contact)
