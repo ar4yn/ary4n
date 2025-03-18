@@ -4,7 +4,7 @@ title: ary4n
 
 ---
 <!-- Markdown Preview - https://dillinger.io/ -->
-@ary4n
+[@ary4n]
 
 
 [github](https://github.com/ar4yn)
@@ -18,6 +18,7 @@ title: ary4n
 [applemusic](https://music.apple.com/profile/mzj)
 
 [contact](/contact)
-‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ 
-‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ 
-© 2025 ary4n
+‎
+
+ ‎ ‎ ‎ ‎ ‎ ‎‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ 
+[© 2025 ary4n]
