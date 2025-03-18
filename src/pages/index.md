@@ -19,4 +19,4 @@ title: ary4n
 
 [contact](/contact)
 
-2025 © ary4n
+© 2025 ary4n
