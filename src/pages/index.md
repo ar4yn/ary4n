@@ -6,6 +6,7 @@ title: ary4n
 <!-- Markdown Preview - https://dillinger.io/ -->
 @ary4n
 
+\\ \\ \\ \\ \\
 
 [github](https://github.com/ar4yn)
 
@@ -20,5 +21,6 @@ title: ary4n
 [contact](/contact)
 ‎
 
+\\ \\ \\ \\ \\
 
 [© 2025 ary4n]
