@@ -15,6 +15,8 @@ title: ary4n
 
 [tiktok](https://www.tiktok.com/@24h0m)
 
-[spotify](https://open.spotify.com/user/hhsa83g7o1wqlpiqfms6abad3?si=e93420646952426f)
+[applemusic](https://music.apple.com/profile/mzj)
 
 [contact](/contact)
+
+2025 © ary4n
