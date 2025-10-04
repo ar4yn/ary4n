@@ -1,22 +1,134 @@
 ---
-layout: ../layouts/Layout.astro
-title: ary4n
-
+/* index.astro for @ary4n bio site */
 ---
-<!-- Markdown Preview - https://dillinger.io/ -->
-@ary4n
 
-[github](https://github.com/ar4yn)
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ary4n</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background: #000;
+        color: #fff;
+        font-family: 'Courier New', Courier, monospace;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        font-size: 1.2rem;
+        letter-spacing: 0.5px;
+        text-align: center;
+        overflow: hidden;
+        animation: fadeIn 1.2s ease-in-out forwards;
+      }
+      h1 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+        opacity: 0;
+        animation: slideUp 1s ease forwards 0.2s;
+      }
+      #clock {
+        text-transform: uppercase;
+        margin-bottom: 30px;
+        opacity: 0;
+        animation: slideUp 1s ease forwards 0.4s;
+      }
+      .links {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 20px;
+        opacity: 0;
+        animation: slideUp 1s ease forwards 0.6s;
+      }
+      a {
+        color: #fff;
+        text-decoration: none;
+        position: relative;
+        font-size: 1rem;
+      }
+      a::after {
+        content: '';
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+        width: 0%;
+        height: 2px;
+        background: #ff0000;
+        transition: width 0.3s ease;
+      }
+      a:hover::after {
+        width: 100%;
+      }
+      a:hover {
+        opacity: 0.8;
+      }
+      footer {
+        font-size: 0.9rem;
+        opacity: 0;
+        position: absolute;
+        bottom: 20px;
+        animation: slideUp 1s ease forwards 0.8s;
+        color: #888;
+      }
 
-[youtube](https://www.youtube.com/@ar4yn)
+      @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+      }
+      @keyframes slideUp {
+        from { transform: translateY(20px); opacity: 0; }
+        to { transform: translateY(0); opacity: 1; }
+      }
 
-[instagram](https://www.instagram.com/ar4yn_/)
+      @media (max-width: 600px) {
+        h1 { font-size: 1.6rem; }
+        body { font-size: 1rem; padding: 20px; }
+        a { font-size: 0.95rem; }
+      }
+    </style>
+  </head>
 
-[tiktok](https://www.tiktok.com/@24h0m)
+  <body>
+    <h1>@ary4n</h1>
+    <div id="clock"></div>
 
-[applemusic](https://music.apple.com/profile/mzj)
+    <div class="links">
+      <a href="https://github.com/ar4yn" target="_blank">github</a>
+      <a href="https://www.youtube.com/@ar4yn" target="_blank">youtube</a>
+      <a href="https://www.instagram.com/ar4yn_/" target="_blank">instagram</a>
+      <a href="https://www.tiktok.com/@24h0m" target="_blank">tiktok</a>
+      <a href="https://music.apple.com/profile/mzj" target="_blank">applemusic</a>
+    </div>
 
-[contact](/contact)
-‎
+    <footer>© 2025 ary4n</footer>
 
-[© 2025 ary4n]
+    <script>
+      function updateClock() {
+        const now = new Date();
+
+        const month = String(now.getMonth() + 1).padStart(2, '0');
+        const day = String(now.getDate()).padStart(2, '0');
+        const year = now.getFullYear();
+
+        let hours = now.getHours();
+        const minutes = String(now.getMinutes()).padStart(2, '0');
+        const ampm = hours >= 12 ? 'pm' : 'am';
+        hours = hours % 12 || 12;
+
+        const timeString = `${month}/${day}/${year} ${hours}:${minutes}${ampm} LDN`;
+        document.getElementById('clock').textContent = timeString;
+      }
+
+      updateClock();
+      setInterval(updateClock, 1000);
+    </script>
+  </body>
+</html>
