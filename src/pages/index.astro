@@ -8,11 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ary4n</title>
     <style>
-      * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-      }
+      * { box-sizing: border-box; margin: 0; padding: 0; }
       body {
         background: #000;
         color: #fff;
@@ -64,12 +60,8 @@
         background: #ff0000;
         transition: width 0.3s ease;
       }
-      a:hover::after {
-        width: 100%;
-      }
-      a:hover {
-        opacity: 0.8;
-      }
+      a:hover::after { width: 100%; }
+      a:hover { opacity: 0.8; }
       footer {
         font-size: 0.9rem;
         opacity: 0;
@@ -79,14 +71,8 @@
         color: #888;
       }
 
-      @keyframes fadeIn {
-        from { opacity: 0; }
-        to { opacity: 1; }
-      }
-      @keyframes slideUp {
-        from { transform: translateY(20px); opacity: 0; }
-        to { transform: translateY(0); opacity: 1; }
-      }
+      @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+      @keyframes slideUp { from { transform: translateY(20px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
 
       @media (max-width: 600px) {
         h1 { font-size: 1.6rem; }
@@ -110,25 +96,27 @@
 
     <footer>© 2025 ary4n</footer>
 
-    <script>
-      function updateClock() {
-        const now = new Date();
+    <script is:inline>
+      if (typeof window !== 'undefined') {
+        function updateClock() {
+          const now = new Date();
 
-        const month = String(now.getMonth() + 1).padStart(2, '0');
-        const day = String(now.getDate()).padStart(2, '0');
-        const year = now.getFullYear();
+          const month = String(now.getMonth() + 1).padStart(2, '0');
+          const day = String(now.getDate()).padStart(2, '0');
+          const year = now.getFullYear();
 
-        let hours = now.getHours();
-        const minutes = String(now.getMinutes()).padStart(2, '0');
-        const ampm = hours >= 12 ? 'pm' : 'am';
-        hours = hours % 12 || 12;
+          let hours = now.getHours();
+          const minutes = String(now.getMinutes()).padStart(2, '0');
+          const ampm = hours >= 12 ? 'pm' : 'am';
+          hours = hours % 12 || 12;
 
-        const timeString = `${month}/${day}/${year} ${hours}:${minutes}${ampm} LDN`;
-        document.getElementById('clock').textContent = timeString;
+          const clockEl = document.getElementById('clock');
+          if (clockEl) clockEl.textContent = `${month}/${day}/${year} ${hours}:${minutes}${ampm} LDN`;
+        }
+
+        updateClock();
+        setInterval(updateClock, 1000);
       }
-
-      updateClock();
-      setInterval(updateClock, 1000);
     </script>
   </body>
 </html>
