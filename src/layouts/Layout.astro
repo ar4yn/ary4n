@@ -3,7 +3,7 @@
 import "@fontsource/jetbrains-mono/400.css";
 import "@fontsource/jetbrains-mono/500.css";
 import { fade, ViewTransitions } from 'astro:transitions'
-
+import Analytics from '@vercel/analytics/astro'
 
 import { SITE_NAME, DESCRIPTION } from '../../src/config'
 
@@ -36,6 +36,7 @@ const pageTitle = [
 		<meta name="generator" content={Astro.generator} />
 		<title>{ pageTitle }</title>
 
+		<Analytics />
 		<ViewTransitions />
 	</head>
 	<body class={`text-gray-500 dark:text-gray-100 ${ isHome ? 'is-home' : '' }`}>
